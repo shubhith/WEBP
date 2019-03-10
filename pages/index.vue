@@ -7,10 +7,10 @@
         <h3>Honey Thakuria</h3>
         <h3 class="titlePosition" >Developer, Blogger, Entrepreneur</h3>
         <div class="links">
-         <a href="https://www.linkedin.com/in/honeythakuria/" target="_blank"> <font-awesome-icon :icon="['fab', 'linkedin']" /> </a>
-         <a href="https://github.com/honey93" target="_blank"> <font-awesome-icon :icon="['fab', 'github']" /> </a>
-         <a href="https://twitter.com/HoneyThakuria" target="_blank"> <font-awesome-icon :icon="['fab', 'twitter']" /> </a>
-         <a href="https://medium.com/@HoneyThakuria" target="_blank"> <font-awesome-icon :icon="['fab', 'medium']" /> </a>
+         <a href="https://www.linkedin.com/in/honeythakuria/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+         <a href="https://github.com/honey93" target="_blank"> <i class="fab fa-github"></i></a>
+         <a href="https://twitter.com/HoneyThakuria" target="_blank"> <i class="fab fa-medium"></i> </a>
+         <a href="https://medium.com/@HoneyThakuria" target="_blank"><i class="fab fa-twitter"></i> </a>
         </div>
       </div>
     </section>
@@ -34,24 +34,24 @@ export default {
 </script>
 
 <style>
-.svg-inline--fa
+.fab
 {
   color:#bbb;
   font-size:30px;
 }
-.svg-inline--fa.fa-linkedin:hover {
+.fab.fa-linkedin:hover {
   color:#0077B5
 }
 
-.svg-inline--fa.fa-twitter:hover {
+.fab.fa-twitter:hover {
   color:#38A1F3
 }
 
-.svg-inline--fa.fa-github:hover {
+.fab.fa-github:hover {
   color:#333
 }
 
-.svg-inline--fa.fa-medium:hover {
+.fab.fa-medium:hover {
   color:#00fa9a;
 }
 
