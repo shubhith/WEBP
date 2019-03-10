@@ -1,0 +1,44 @@
+<template>
+  <div class="Footer">
+
+    <div class="footer-content">
+      <div>Blogs</div>
+      <div>Projects</div>
+      <div>Contact</div>
+    </div>
+    
+    <div class="footer-content">Copyright © 2019 Honey Thakuria. </div>
+  </div>
+</template>
+
+
+<style scoped>
+
+.Footer{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color:rgb(247, 251, 251);
+    height:90px;
+}
+.footer-content{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.footer-content div{
+    margin-right:10px;
+    cursor: pointer;
+}
+
+</style>
+
+
+<script>
+export default {
+    name:"Header"
+};
+</script>
+
+
