@@ -1,9 +1,13 @@
 <template>
   <div class="Header">
-    <div class="Header-section-left">Honey Thakuria</div>
+    <div class="Header-section-left">
+      <nuxt-link to="/">Honey Thakuria</nuxt-link>
+    </div>
 
     <div class="Header-section-right">
-      <div>Blogs</div>
+      <div>
+        <nuxt-link to="/blogs">Blogs</nuxt-link>
+      </div>
       <div>Projects</div>
       <div>Contact</div>
     </div>
@@ -12,36 +16,38 @@
 
 
 <style scoped>
-
-.Header{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 20px;
-    background-color:rgb(247, 251, 251);
-    height: 60px;
+.Header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(247, 251, 251);
+  height: 60px;
 }
-.Header-section-right{
-    display: Flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+.Header-section-right {
+  display: Flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-.Header-section-right div:nth-child(1),.Header-section-right div:nth-child(2){
-   margin-right:10px; 
+.Header-section-right div:nth-child(1),
+.Header-section-right div:nth-child(2) {
+  margin-right: 10px;
 }
-
-.Header-section-right div:hover, .Header-section-left:hover{
-    cursor:pointer;
-    color:blue;
+.Header-section-right div a,.Header-section-left a{
+  text-decoration: none;
+  color:black;
 }
-
-
+.Header-section-right div a:hover,
+.Header-section-left a:hover, a.nuxt-link-exact-active {
+  cursor: pointer;
+  color: blue!important;
+}
 </style>
 
 
 <script>
 export default {
-    name:"Header"
+  name: "Header"
 };
 </script>
 
