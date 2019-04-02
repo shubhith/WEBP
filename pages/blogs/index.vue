@@ -2,7 +2,7 @@
   <div>
     <Header/>
     <section class="container">
-       <h2 class="blogs-page-title"> Some of my Blogs published on Medium . . . </h2> 
+       <h2 class="blogs-page-title"> Some of my Publications . . . </h2> 
       <div class="row">
         <div class="col-md-6 blog" v-for="blog in blogsData" :key="blog.id">
           <a :href="blog.url" target="blank">
