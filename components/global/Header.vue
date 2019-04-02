@@ -6,10 +6,9 @@
 
     <div class="Header-section-right">
       <div>
-        <nuxt-link to="/blogs">Blogs</nuxt-link>
+        <nuxt-link to="/blogs">BLOGS</nuxt-link>
       </div>
-      <div>Projects</div>
-      <div>Contact</div>
+      
     </div>
   </div>
 </template>

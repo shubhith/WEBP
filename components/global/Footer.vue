@@ -2,9 +2,8 @@
   <div class="Footer">
 
     <div class="footer-content">
-      <div>Blogs</div>
-      <div>Projects</div>
-      <div>Contact</div>
+      <nuxt-link to="/blogs">Blogs</nuxt-link>
+      
     </div>
     
     <div class="footer-content">Copyright © 2019 Honey Thakuria. </div>
@@ -26,6 +25,11 @@
     display:flex;
     flex-flow: row wrap;
     justify-content: center;
+   
+}
+.footer-content a{
+   text-decoration: none;
+    color:black;
 }
 .footer-content div{
     margin-right:10px;
