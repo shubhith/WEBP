@@ -1,7 +1,7 @@
 <template>
   <div class="Header">
     <div class="Header-section-left">
-      <nuxt-link to="/">Honey Thakuria</nuxt-link>
+      <nuxt-link to="/">HONEY THAKURIA</nuxt-link>
     </div>
 
     <div class="Header-section-right">
