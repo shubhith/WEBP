@@ -29,6 +29,12 @@ export default {
     Logo,
     Header,
     Footer
+  },
+   head(){
+      return{
+          title:"Honey Thakuria",
+          meta:[{hid:"Personal",name:"Honey Thakuria personal Website",content:"Honey Thakuria is a Full Stack Developer with expertise in Cloud, BlockChain & Web application. He also writes for leading publications on Medium. Check out Honey's blogs, projects here"}]
+      }
   }
 };
 </script>
