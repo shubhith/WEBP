@@ -5,9 +5,9 @@
   "author": "",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node wakeup.js & nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "node wakeup.js & nuxt start",
     "generate": "nuxt generate",
     "heroku-postbuild": "npm run build"
   },
