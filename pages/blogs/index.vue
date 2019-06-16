@@ -5,7 +5,7 @@
        <h2 class="blogs-page-title"> Some of my Publications . . . </h2> 
       <div class="row">
         <div class="col-md-6 blog" v-for="blog in blogsData" :key="blog.id">
-          <a :href="blog.url" target="blank">
+          <a :href="blog.url" target="_blank">
             <div class="blog-card">
               <div class="blogImageParent">
                 <img :src="blog.imageUrl" class="blogImage">
@@ -101,7 +101,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .blogImageParent{
     max-height:300px;
     overflow: hidden;

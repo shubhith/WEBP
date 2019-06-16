@@ -6,7 +6,10 @@
 
     <div class="Header-section-right">
       <div>
-        <nuxt-link to="/blogs">BLOGS</nuxt-link>
+        <nuxt-link to="/blogs">Blogs</nuxt-link>
+      </div>
+      <div>
+        <nuxt-link to="/contact">Contact</nuxt-link>
       </div>
       
     </div>
