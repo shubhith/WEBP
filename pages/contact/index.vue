@@ -23,6 +23,7 @@
 
       <template>
         <div class="form-css">
+             <h2 class="text-center"> Contact Form</h2>
           <b-form v-if="show" action="https://formspree.io/thakuria.honey@gmail.com" method="POST">
             <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
               <b-form-input
@@ -116,6 +117,10 @@ export default {
   color: black;
   font-weight: 100;
   margin-right: 10px;
+}
+
+.links{
+    margin-top:50px; 
 }
 
 .fab {
