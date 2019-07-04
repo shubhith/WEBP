@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+  
     <section class="container">
       <h2
         class="contact-page-title"
@@ -63,7 +63,6 @@
         </div>
       </template>
     </section>
-    <Footer/>
   </div>
 </template>
 
@@ -75,9 +74,7 @@ import Footer from "~/components/global/Footer.vue";
 
 export default {
   components: {
-    Logo,
-    Header,
-    Footer
+    Logo
   },
   head() {
     return {

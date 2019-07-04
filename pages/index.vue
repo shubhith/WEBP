@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+  
     <section class="container">
       <div>
         <img src="~/static/honeythakuria.jpeg"  class="main_image"/>
@@ -14,21 +14,16 @@
         </div>
       </div>
     </section>
-    <Footer/>
+
   </div>
 </template>
 
 <script>
 import Logo from "~/components/Logo.vue";
-import Header from "~/components/global/Header.vue";
-
-import Footer from "~/components/global/Footer.vue";
 
 export default {
   components: {
-    Logo,
-    Header,
-    Footer
+    Logo
   },
    head(){
       return{

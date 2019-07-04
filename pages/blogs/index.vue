@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+  
     <section class="container">
        <h2 class="blogs-page-title"> Some of my Publications . . . </h2> 
       <div class="row">
@@ -22,21 +22,16 @@
         </div>
       </div>
     </section>
-    <Footer/>
+
   </div>
 </template>
 
 <script>
 import Logo from "~/components/Logo.vue";
-import Header from "~/components/global/Header.vue";
-
-import Footer from "~/components/global/Footer.vue";
 
 export default {
   components: {
-    Logo,
-    Header,
-    Footer
+    Logo
   },
   head(){
       return{
