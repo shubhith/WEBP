@@ -3,8 +3,8 @@
   
     <section class="container">
        <h2 class="blogs-page-title"> Some of my Publications . . . </h2> 
-      <div class="row">
-        <div class="col-md-6 blog" v-for="blog in blogsData" :key="blog.id">
+      <div class="row" v-if="$store.state.blogs.blogs.length">
+        <div class="col-md-6 blog" v-for="blog in $store.state.blogs.blogs" :key="blog.id">
           <a :href="blog.url" target="_blank">
             <div class="blog-card">
               <div class="blogImageParent">
@@ -41,56 +41,10 @@ export default {
   },
   data() {
     return {
-      imagename: "hi",
-      blogsData: [
-          {
-          id: 4,
-          title: "How to handle event handling in JavaScript (examples and all)",
-          url:
-            "https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57",
-          publication: "freeCodeCamp",
-          imageUrl:
-            "https://cdn-images-1.medium.com/max/1600/1*dhtbZon7OPebZuUO9-yyjw.jpeg"
-        },
-        {
-          id: 1,
-          title: "How to set up responsive UI search in Vue.js",
-          url:
-            "https://medium.freecodecamp.org/how-to-set-up-responsive-ui-search-in-vue-js-bf6007b7fc0f",
-          publication: "freeCodeCamp",
-          imageUrl:
-            "https://cdn-images-1.medium.com/max/1600/1*557yKFY9udPu1QV2_bW9Kw.jpeg"
-        },
-        {
-          id: 2,
-          title: "How to create a realtime app using Socket.io, React, Node & MongoDB",
-          url:
-            "https://medium.freecodecamp.org/how-to-create-a-realtime-app-using-socket-io-react-node-mongodb-a10c4a1ab676",
-          publication: "freeCodeCamp",
-          imageUrl:
-            "https://cdn-images-1.medium.com/max/1600/1*j_kShofJmfZ_-bEpt1IS8Q.jpeg"
-        },
-        {
-          id: 3,
-          title: "How to architect a DApp using Nuxt.js and Nebulas",
-          url:
-            "https://medium.freecodecamp.org/architecting-dapp-using-nuxt-js-nebulas-fc00712ae341",
-          publication: "freeCodeCamp",
-          imageUrl:
-            "https://cdn-images-1.medium.com/max/1600/1*1LSHpbDThueykKQQeCkAug.png"
-        },
-        {
-          id: 5,
-          title: "AWS goes down, Bitbucket suffers!! Architecture design tips for Microservices",
-          url:
-            "https://codeburst.io/aws-goes-down-bitbucket-suffers-robust-system-design-tips-2b49f745cdd7",
-          publication: "Codeburst.io",
-          imageUrl:
-            "https://cdn-images-1.medium.com/max/2600/1*Cm8cdGMrTms291x3hl4VEQ.png"
-        }
-        
-      ]
     };
+  },
+  beforeCreate(){
+  //  this.$store.dispatch('blogs/fetchBlogs');
   }
 };
 </script>

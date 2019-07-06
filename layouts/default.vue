@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header/>
+    <Header />
     <nuxt />
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -12,18 +12,18 @@ import Header from "~/components/global/Header.vue";
 import Footer from "~/components/global/Footer.vue";
 
 export default {
-  components:{
+  components: {
     Header,
     Footer
   }
-}
+};
 </script>
 
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

@@ -1,10 +1,9 @@
 <template>
   <div>
-  
     <section class="container">
       <h2
         class="contact-page-title"
-      >If you want to talk about Opensource, Freelance or just want to say Hi:</h2>
+      >If you want to talk about Opensource, Freelance or just want to say Hi!</h2>
 
       <div class="links">
         <a href="https://www.linkedin.com/in/honeythakuria/" target="_blank">
@@ -23,7 +22,7 @@
 
       <template>
         <div class="form-css">
-             <h2 class="text-center"> Contact Form</h2>
+          <h2 class="text-center">Contact Form</h2>
           <b-form v-if="show" action="https://formspree.io/thakuria.honey@gmail.com" method="POST">
             <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
               <b-form-input
@@ -106,9 +105,6 @@ export default {
 
 
 <style scoped>
-.form-css {
-  margin: 50px 0;
-}
 .links a {
   text-decoration: none;
   color: black;
@@ -116,8 +112,13 @@ export default {
   margin-right: 10px;
 }
 
-.links{
-    margin-top:50px; 
+.container {
+  min-height: calc(100vh - 150px);
+  box-sizing: border-box;
+}
+
+.links {
+  margin-top: 50px;
 }
 
 .fab {
@@ -141,6 +142,6 @@ export default {
 }
 
 .contact-page-title {
-  margin: 15px 0;
+  padding-top: 50px;
 }
 </style>
