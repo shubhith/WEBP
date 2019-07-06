@@ -63,7 +63,7 @@ export const actions = {
           ]);
         //console.log("Promise Resolved");
         resolve();
-      }, 5000);
+      }, 200);
     });
   }
 };
