@@ -41,7 +41,20 @@
 
 <script>
 export default {
-    name:"Header"
+    name:"Header",
+     beforeCreate(){
+     //  this.$store.dispatch('blogs/fetchBlogs');
+    console.log("before Create Header");
+  },
+  created(){
+    console.log("Created Header");
+  },
+  beforeMount(){
+    console.log("beforeMount Header");
+  },
+  mounted(){
+    console.log("Mounted Header");
+  }
 };
 </script>
 

@@ -9,7 +9,7 @@ export const mutations = {
 };
 export const actions = {
   async nuxtServerInit({ dispatch }) {
-    console.log("nuxtServerInit");
+    console.log("nuxtServerInit called");
     await dispatch("blogs/fetchBlogs");
   }
 };

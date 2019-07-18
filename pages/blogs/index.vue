@@ -44,7 +44,17 @@ export default {
     };
   },
   beforeCreate(){
-  //  this.$store.dispatch('blogs/fetchBlogs');
+     //  this.$store.dispatch('blogs/fetchBlogs');
+    console.log("before Create");
+  },
+  created(){
+    console.log("Created");
+  },
+  beforeMount(){
+    console.log("beforeMount");
+  },
+  mounted(){
+    console.log("Mounted");
   }
 };
 </script>
