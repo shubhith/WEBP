@@ -1,5 +1,5 @@
 export const state = () => {
-  return { count: 3 };
+  return { count: 3,allowedUrls:["how-to-set-up-responsive-ui-search-in-vue-js","vue-blog"] };
 };
 
 export const mutations = {

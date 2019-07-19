@@ -44,16 +44,16 @@ export default {
     name:"Header",
      beforeCreate(){
      //  this.$store.dispatch('blogs/fetchBlogs');
-    console.log("before Create Header");
+  //  console.log("before Create Header");
   },
   created(){
-    console.log("Created Header");
+  //  console.log("Created Header");
   },
   beforeMount(){
-    console.log("beforeMount Header");
+ //   console.log("beforeMount Header");
   },
   mounted(){
-    console.log("Mounted Header");
+  //  console.log("Mounted Header");
   }
 };
 </script>

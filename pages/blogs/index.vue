@@ -54,7 +54,7 @@ export default {
     console.log("beforeMount");
   },
   mounted(){
-    console.log("Mounted");
+    console.log("Mounted",this);
   }
 };
 </script>
