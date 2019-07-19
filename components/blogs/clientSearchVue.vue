@@ -41,7 +41,7 @@
         >Responsive view as shown below:</li>
       </ol>
     </div>
-    <div class="text-center">
+    <div class="text-center blog-img">
       <img src="https://miro.medium.com/max/1208/1*xOtkEFIM8_XwL93hSp6E2w.gif" />
     </div>
     <div>
@@ -167,6 +167,10 @@ inside.likes.count = 0;
     margin: 20px 0;
     padding: 10px 0;
     border-bottom: 1px solid gray;
+}
+
+.blog-img img{
+    max-width: 100%;
 }
 </style>
 
