@@ -41,7 +41,7 @@
 
 <script>
 export default {
-    name:"Header",
+    name:"Footer",
      beforeCreate(){
      //  this.$store.dispatch('blogs/fetchBlogs');
   //  console.log("before Create Header");

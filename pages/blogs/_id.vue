@@ -1,5 +1,5 @@
 <template>
-<clientSearchVue/>
+  <clientSearchVue />
 </template>
 
 <script>
@@ -24,10 +24,14 @@ export default {
     };
   },
   data() {
-    return {allowedUrls:["how-to-set-up-responsive-ui-search-in-vue-js","vue-blog"]};
+    return {
+      allowedUrls: ["how-to-set-up-responsive-ui-search-in-vue-js", "vue-blog"]
+    };
   },
   validate(context) {
-    return context.store.state.allowedUrls.includes(context.params.id) ? true : false;
+    return context.store.state.allowedUrls.includes(context.params.id)
+      ? true
+      : false;
   },
   beforeCreate() {
     //  this.$store.dispatch('blogs/fetchBlogs');

@@ -55,7 +55,8 @@ export default {
   },
   mounted(){
     console.log("Mounted",this);
-  }
+  },
+   middleware: ["vm"]
 };
 </script>
 
