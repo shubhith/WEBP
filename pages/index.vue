@@ -1,20 +1,95 @@
 <template>
   <div>
-  
     <section class="container">
-      <div>
+      <div class="heroBanner">
+        <div class="row">
+          <div class="col-md-7">
+            <p>Hello!</p>
+            <p>I’m Honey</p>
+            <p>I’m a Full-Stack Developer. I enjoy building end to end system for masses.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="~/static/honeythakuria.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="stuffSection"> 
+        <div class="row"> 
+          <div class="col-md-6 "> 
+            <h1 class="stuffTitle">Stuff I've done </h1>
+            <div class="stuffParent" v-for="individualStuff in $store.state.stuff" :key="individualStuff.id" v-if="individualStuff.id < 3"> 
+                <div class="stuffImage">
+                  <img :src="individualStuff.imageUrl" class="stuffImageActual"> 
+
+                </div>
+                <div class="stuffText"> 
+                  <p>Creating a Real Time App in React </p>
+                <p>Publication: FreeCodeCamp </p>
+                </div>
+
+              </div>
+          </div>
+          <div class="col-md-6" > 
+              <div class="stuffParent" v-for="individualStuff in $store.state.stuff" :key="individualStuff.id" v-if="individualStuff.id >= 3"> 
+                <div class="stuffImage">
+                  <img :src="individualStuff.imageUrl" class="stuffImageActual"> 
+
+                </div>
+                <div class="stuffText"> 
+                  <p>Creating a Real Time App in React </p>
+                <p>Publication: FreeCodeCamp </p>
+                </div>
+                
+
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="stuffSection"> 
+        <div class="row"> 
+          <div class="col-md-6 "> 
+            <h1 class="stuffTitle">Places I've worked </h1>
+            <div class="stuffParent" v-for="individualCompany in $store.state.companies" :key="individualCompany.id" v-if="individualCompany.id < 3"> 
+                <div class="stuffImage">
+                  <img :src="individualCompany.url" class="stuffImageActual"> 
+
+                </div>
+                <div class="stuffText"> 
+                  <p>{{individualCompany.name}} </p>
+                
+                </div>
+
+              </div>
+          </div>
+          <div class="col-md-6" > 
+              <div class="stuffParent" v-for="individualCompany in $store.state.companies" :key="individualCompany.id" v-if="individualCompany.id >= 3"> 
+                <div class="stuffImage">
+                  <img :src="individualCompany.url" class="stuffImageActual"> 
+
+                </div>
+                <div class="stuffText"> 
+                  <p>{{individualCompany.name}} </p>
+                
+                </div>
+                
+
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div>
         <img src="~/static/honeythakuria.jpeg"  class="main_image"/>
         <h3>Honey Thakuria</h3>
         <h3 class="titlePosition" >Developer, Blogger, Entrepreneur</h3>
-        <div class="links">
-         <a href="https://www.linkedin.com/in/honeythakuria/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-         <a href="https://github.com/honey93" target="_blank"> <i class="fab fa-github"></i></a>
-         <a href="https://twitter.com/HoneyThakuria" target="_blank"> <i class="fab fa-twitter"></i> </a>
-         <a href="https://medium.com/@HoneyThakuria" target="_blank"><i class="fab fa-medium"></i> </a>
-        </div>
-      </div>
+        
+      </div>-->
     </section>
-
   </div>
 </template>
 
@@ -25,89 +100,58 @@ export default {
   components: {
     Logo
   },
-   head(){
-      return{
-          title:"Honey Thakuria",
-          meta:[{hid:"Personal",name:"Honey Thakuria personal Website",content:"Honey Thakuria is a Full Stack Developer with expertise in Cloud, BlockChain & Web application. He also writes for leading publications on Medium. Check out Honey's blogs, projects here"}]
-      }
+  head() {
+    return {
+      title: "Honey Thakuria",
+      meta: [
+        {
+          hid: "Personal",
+          name: "Honey Thakuria personal Website",
+          content:
+            "Honey Thakuria is a Full Stack Developer with expertise in Cloud, BlockChain & Web application. He also writes for leading publications on Medium. Check out Honey's blogs, projects here"
+        }
+      ]
+    };
   }
 };
 </script>
 
 <style scoped>
-.fab
-{
-  color:#bbb;
-  font-size:30px;
+.heroBanner{
+    margin-top: 267px;
+    margin-bottom: 267px; 
 }
-.fab.fa-linkedin:hover {
-  color:#0077B5
-}
-
-.fab.fa-twitter:hover {
-  color:#38A1F3
-}
-
-.fab.fa-github:hover {
-  color:#333
+.stuffParent{
+  width:100%;
+  max-width: 488px;
+  height: 292px;
+  position: relative;
+  overflow: hidden; 
+  margin-bottom:50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
-.fab.fa-medium:hover {
-  color:#00fa9a;
+.stuffImage{
+  width:100%;
+  max-width: 488px;
+  height: 229px;
+  overflow:hidden;
+  
+}
+.stuffImageActual{
+  width:100%;
+}
+.stuffTitle{
+  margin-bottom:140px;
+}
+.stuffText{
+  padding:10px;
+  
+}
+.stuffText p {
+  margin: 0;
 }
 
 
-
-.titlePosition{
-  font-weight: 400;
-  font-size:25px;
-}
-
-.container {
-  margin: 0 auto;
-  min-height: calc(100vh - 150px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-.links a{
-  text-decoration: none;
-  color:black;
-  font-weight:100;
-  margin-right:10px; 
-}
-
-.main_image {
-  border-radius: 100%;
-  width:40%;
-}
-
-@media screen and (max-width: 550px) {
- .main_image {
-  width:80%;
-}
-}
 </style>
