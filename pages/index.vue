@@ -167,17 +167,25 @@ color: #4E4E50;
 .stuffParent{
   width:100%;
   max-width: 488px;
-  height: 292px;
+  
   position: relative;
   overflow: hidden; 
   margin-bottom:50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
+
+.height-normal{
+  height: 292px;
+}
+.height-extra{
+    height: 305px;
+}
+
+
 .stuffParent-right{
   width:100%;
   max-width: 488px;
-  height: 292px;
   position: relative;
   overflow: hidden; 
   margin-bottom:50px;
@@ -218,6 +226,11 @@ color: #000000;
 
   .heroImage{
   display: none;
+}
+
+.heroBanner{
+    margin-top: 150px;
+    margin-bottom: 150px; 
 }
   
 }
