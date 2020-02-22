@@ -1,5 +1,5 @@
 <template>
-  <div class="Header">
+  <div class="Header container">
     <div class="Header-section-left">
       <nuxt-link to="/">HONEY THAKURIA</nuxt-link>
     </div>
@@ -23,7 +23,6 @@
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 20px;
-  background-color: rgb(247, 251, 251);
   height: 60px;
 }
 .Header-section-right {
@@ -37,12 +36,18 @@
 }
 .Header-section-right div a,.Header-section-left a{
   text-decoration: none;
-  color:black;
+  font-family: Karla;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
 }
 .Header-section-right div a:hover,
 .Header-section-left a:hover, a.nuxt-link-exact-active {
   cursor: pointer;
-  color: blue!important;
+  color: #3AA8FF!important;
 }
 </style>
 

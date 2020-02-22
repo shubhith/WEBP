@@ -2,7 +2,8 @@
   <div class="Footer">
 
     <div class="footer-content">
-      <nuxt-link to="/blogs">Blogs</nuxt-link>
+      <p class="footerConnect">Let’s connect </p>
+      <p class="footerCollab"> Feel free to reach out for any collaboration. </p>
       
     </div>
 
@@ -13,12 +14,14 @@
          <a href="https://medium.com/@HoneyThakuria" target="_blank"><i class="fab fa-medium"></i> </a>
         </div>
     
-    <div class="footer-content">Copyright © 2019 Honey Thakuria. </div>
+    <div class="footer-content copyright">Copyright © 2019 Honey Thakuria. </div>
   </div>
 </template>
 
 
 <style scoped>
+
+
 
 .Footer{
     display:flex;
@@ -32,9 +35,43 @@
 }
 .footer-content{
     display:flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
    
+}
+.copyright{
+  font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+
+color: #000000;
+}
+
+.footerConnect{
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+margin-bottom: 0;
+
+color: #000000;
+}
+.footerCollab{
+  margin-bottom:0;
+  font-family: Karla;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #000000;
+
 }
 .footer-content a{
    text-decoration: none;

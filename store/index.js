@@ -2,7 +2,7 @@ export const state = () => {
   return { count: 3,allowedUrls:["how-to-set-up-responsive-ui-search-in-vue-js","vue-blog"],stuff:[
     {
       id: 1,
-      title: "How to handle event handling in JavaScript (examples and all)",
+      title: "Event handling in JavaScript",
       url:
         "https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57",
       publication: "freeCodeCamp",
@@ -21,7 +21,7 @@ export const state = () => {
     {
       id: 3,
       title:
-        "How to create a realtime app using Socket.io, React, Node & MongoDB",
+        "Realtime app using Socket.io, React, Node, MongoDB",
       url:
         "https://medium.freecodecamp.org/how-to-create-a-realtime-app-using-socket-io-react-node-mongodb-a10c4a1ab676",
       publication: "freeCodeCamp",
@@ -40,7 +40,7 @@ export const state = () => {
     {
       id: 5,
       title:
-        "AWS goes down, Bitbucket suffers!! Architecture design tips for Microservices",
+        "Architecture design tips for Microservices",
       url:
         "https://codeburst.io/aws-goes-down-bitbucket-suffers-robust-system-design-tips-2b49f745cdd7",
       publication: "Codeburst.io",
@@ -48,7 +48,7 @@ export const state = () => {
         "https://cdn-images-1.medium.com/max/2600/1*Cm8cdGMrTms291x3hl4VEQ.png"
     }
   ],
-  companies:[{id:1,name:"AirAsia",url:"~/static/AirAsia.png"},{id:2,name:"Times Internet",url:"~/static/TimesInternet.jpeg"},{id:3,name:"Mantra Labs",url:"~/static/MantraLabs.png"},{id:4,name:"Cognizant",url:"~/static/Cognizant.jpeg"}]
+  companies:[{id:1,name:"AirAsia",url:"AirAsia.png",duration:"Dec 2018 - Present"},{id:2,name:"Times Internet",url:"TimesInternet.jpeg", duration:"Jan 2018 - Dec 2018"},{id:3,name:"Mantra Labs",url:"MantraLabs.png", duration:"Feb 2017 - Jan 2018"},{id:4,name:"Cognizant",url:"Cognizant.jpeg",duration:"Sep 2015 - Aug 2016"}]
 
 
 };
