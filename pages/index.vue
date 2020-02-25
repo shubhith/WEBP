@@ -169,10 +169,7 @@ color: #4E4E50;
   max-width: 488px;
   
   position: relative;
-  overflow: hidden; 
   margin-bottom:50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
 }
 
 .height-normal{
@@ -187,18 +184,17 @@ color: #4E4E50;
   width:100%;
   max-width: 488px;
   position: relative;
-  overflow: hidden; 
   margin-bottom:50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
   float:right;
 }
 
 .stuffImage{
   width:100%;
   max-width: 488px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.24);
   height: 229px;
   overflow:hidden;
+  border-radius:5px;
   
 }
 .stuffImageActual{
