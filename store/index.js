@@ -2,53 +2,132 @@ export const state = () => {
   return { count: 3,allowedUrls:["how-to-set-up-responsive-ui-search-in-vue-js","vue-blog"],stuff:[
     {
       id: 1,
-      title: "Event handling in JavaScript",
+      title: "Inclusive Use of Broadband Connectivity for Quality Education",
       url:
-        "https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57",
-      publication: "freeCodeCamp",
+        "https://www.unescap.org/sites/default/files/Inclusive%20Use%20of%20Broadband%20Connectivity%20for%20Quality%20Education%2C%20Insights%20from%20Asia%20and%20the%20Pacific_0.pdf",
+      publication: "United Nations ESCAP",
+      Year: "2019",
       imageUrl:
-        "https://cdn-images-1.medium.com/max/1600/1*dhtbZon7OPebZuUO9-yyjw.jpeg"
+        "UNPoster.png"
     },
     {
       id: 2,
-      title: "How to set up responsive UI search in Vue.js",
+      title: "Business and Social Opportunity for E-Learning in Indian Agriculture",
       url:
-        "https://medium.freecodecamp.org/how-to-set-up-responsive-ui-search-in-vue-js-bf6007b7fc0f",
-      publication: "freeCodeCamp",
+        "https://drive.google.com/open?id=1VwY-sJUGCg3zt4dHwrBRXSmT5eh9Xv8T",
+      publication: "Coursera",
+      Year: "2019",
       imageUrl:
-        "https://cdn-images-1.medium.com/max/1600/1*557yKFY9udPu1QV2_bW9Kw.jpeg"
+        "Coursera.png"
     },
     {
       id: 3,
       title:
-        "Realtime app using Socket.io, React, Node, MongoDB",
+        "Physics and Technology for Future Presidents",
       url:
-        "https://medium.freecodecamp.org/how-to-create-a-realtime-app-using-socket-io-react-node-mongodb-a10c4a1ab676",
-      publication: "freeCodeCamp",
+        "https://drive.google.com/drive/folders/1fj5rJhsS10e5dW8fALhTF2AsBrX-s44z?usp=sharing",
+      publication: "University of California, Berkeley",
+      Year: "2018",
       imageUrl:
-        "https://cdn-images-1.medium.com/max/1600/1*j_kShofJmfZ_-bEpt1IS8Q.jpeg"
+        "P10.png"
     },
     {
       id: 4,
-      title: "How to architect a DApp using Nuxt.js and Nebulas",
+      title: "IIMA’s Digital Leap: Formulating Online Education Strategy",
       url:
-        "https://medium.freecodecamp.org/architecting-dapp-using-nuxt-js-nebulas-fc00712ae341",
-      publication: "freeCodeCamp",
+        "https://cases.iima.ac.in/index.php/iima-s-digital-leap-formulating-online-education-strategy.html",
+      publication: "Indian Institute of Management, Ahmedabad",
+      Year: "2019",
       imageUrl:
-        "https://cdn-images-1.medium.com/max/1600/1*1LSHpbDThueykKQQeCkAug.png"
+        "IIMA.png"
     },
     {
       id: 5,
       title:
-        "Architecture design tips for Microservices",
+        "Okhai Center for Empowerment: Refashioning the lives of rural women",
       url:
-        "https://codeburst.io/aws-goes-down-bitbucket-suffers-robust-system-design-tips-2b49f745cdd7",
-      publication: "Codeburst.io",
+        "https://cases.iima.ac.in/index.php/okhai-centre-for-empowerment-refashioning-the-lives-of-rural-women.html",
+      publication: "Okhai Enterprise ",
+      Year: "2017",
       imageUrl:
-        "https://cdn-images-1.medium.com/max/2600/1*Cm8cdGMrTms291x3hl4VEQ.png"
+        "Okhai.png"
+    },
+
+    {
+      id: 6,
+      title:
+        "Salesforce training material",
+      url:
+        "",
+      publication: "Room To Read",
+      Year: "2020",
+      imageUrl:
+        "Salesforce.png"
+    },
+
+
+    {
+      id: 7,
+      title:
+       "Grihini Social Welfare Society: Breaking Stereotypes Empowering Women",
+      url:
+         "https://www.researchgate.net/publication/330145312_Tata_Motors_Grihini_Social_Welfare_Society_'Breaking_Stereotypes_Empowering_Women",
+      publication: "Tata Motors Limited",
+      Year: "2015",
+      imageUrl:
+        "Grihini.png"
+    },
+
+    {
+      id: 8,
+      title:
+        "Club Enerji Program",
+      url:
+         "https://www.researchgate.net/publication/330145381_Club_Enerji_Program_at_Tata_Power",
+      publication: "Tata Power Limited",
+      Year: "2016",
+      imageUrl:
+        "CE.png"
+    },
+    {
+      id: 9,
+      title:
+        "SauMill: The Journey of Cost & Value Innovation at Tata Communications Limited",
+      url:
+         "http://www.openinnovationtmc.org/HOME/soitmc/sub/sub.htm?nav_code=soi1479103409",
+      publication: "Tata Communication Limited",
+      Year: "2017",
+      imageUrl:
+        "SAU.png"
+    },
+    {
+      id: 10,
+      title:
+        "Greenolution: Sensitizing Employees on Environmental Conservation",
+      url:
+         "https://www.researchgate.net/publication/312085946_Greenolution_IMRA-IIMB_Publication",
+      publication: "Tata Power Limited",
+      Year: "2016",
+      imageUrl:
+        "GNR1.png"
+    },
+
+    {
+      id: 11,
+      title:
+        "Professional Driver Training Initiative: Paving the Ways for The Skilled Truck Drivers",
+      url:
+         "",
+      publication: "Tata Motors Limited",
+      Year: "In Process",
+      imageUrl:
+        "PDTI.png"
     }
   ],
-  companies:[{id:1,name:"AirAsia",url:"AirAsia.png",duration:"Dec 2018 - Present"},{id:2,name:"Times Internet",url:"TimesInternet.jpeg", duration:"Jan 2018 - Dec 2018"},{id:3,name:"Mantra Labs",url:"MantraLabs.png", duration:"Feb 2017 - Jan 2018"},{id:4,name:"Cognizant",url:"Cognizant.jpeg",duration:"Sep 2015 - Aug 2016"}]
+  companies:[{id:1,name:"Room To Read",url:"R2R.png",duration:"Jan 2020 - Apil 2020"},
+  {id:2,name:"Coursera",url:"CL.jpg", duration:"Nov 2019 - May 2020"},
+  {id:3,name:"UC Berkeley",url:"UCBL.jpg", duration:"Jan 2018 - May 2019"},
+  {id:4,name:"United Nations",url:"UN2.jpg",duration:"May 2018 - July 2018"}]
 
 
 };

@@ -3,27 +3,18 @@
     <section class="container">
       <h2
         class="contact-page-title"
-      >If you want to talk about Opensource, Freelance or just want to say Hi!</h2>
+      >If you want to talk about Instruction Design, E-Learning, Consulting, Freelance or just want to say Hi!</h2>
 
       <div class="links">
-        <a href="https://www.linkedin.com/in/honeythakuria/" target="_blank">
+        <a href="https://www.linkedin.com/in/shubhithakuria/" target="_blank">
           <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/honey93" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://twitter.com/HoneyThakuria" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://medium.com/@HoneyThakuria" target="_blank">
-          <i class="fab fa-medium"></i>
         </a>
       </div>
 
       <template>
         <div class="form-css">
-          <h2 class="text-center">Contact Form</h2>
-          <b-form v-if="show" action="https://formspree.io/thakuria.honey@gmail.com" method="POST">
+          <h2 class="text-center">Let's Connect </h2>
+          <b-form v-if="show" action="https://formspree.io/shubhithakuria12@gmail.com" method="POST">
             <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
               <b-form-input
                 name="Name"
@@ -77,7 +68,7 @@ export default {
   },
   head() {
     return {
-      title: "Contact - Honey Thakuria",
+      title: "Contact - Shubhi Thakuria",
       meta: [
         {
           hid: "Contact",

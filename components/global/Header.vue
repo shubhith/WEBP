@@ -1,13 +1,11 @@
 <template>
   <div class="Header container">
     <div class="Header-section-left">
-      <nuxt-link to="/">HONEY THAKURIA</nuxt-link>
+      <nuxt-link to="/">SHUBHI THAKURIA</nuxt-link>
     </div>
 
     <div class="Header-section-right">
-      <div>
-        <nuxt-link to="/blogs">Blogs</nuxt-link>
-      </div>
+    
       <div>
         <nuxt-link to="/contact">Contact</nuxt-link>
       </div>

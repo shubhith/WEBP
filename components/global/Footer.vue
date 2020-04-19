@@ -8,13 +8,11 @@
     </div>
 
     <div class="links">
-         <a href="https://www.linkedin.com/in/honeythakuria/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-         <a href="https://github.com/honey93" target="_blank"> <i class="fab fa-github"></i></a>
-         <a href="https://twitter.com/HoneyThakuria" target="_blank"> <i class="fab fa-twitter"></i> </a>
-         <a href="https://medium.com/@HoneyThakuria" target="_blank"><i class="fab fa-medium"></i> </a>
+         <a href="https://www.linkedin.com/in/shubhithakuria/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+         
         </div>
     
-    <div class="footer-content copyright">Copyright © 2019 Honey Thakuria. </div>
+    <div class="footer-content copyright">Copyright © 2019 Shubhi Thakuria. </div>
   </div>
 </template>
 

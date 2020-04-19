@@ -5,14 +5,14 @@
         <div class="row">
           <div class="col-md-7">
             <p class="heroHello">Hello!</p>
-            <p class="heroName">I’m Honey</p>
+            <p class="heroName">I’m Shubhi</p>
             <p
               class="heroDescription"
-            >I’m a Full-Stack Developer. I enjoy building end to end system for masses.</p>
-            <p class="heroDescription">I create apps using <span class="techColor"> {{this.tech}} </span> <span v-if="showTyping"> | </span> </p>
+            >I’m passionate to empower learners through ed-tech and engaging learning programs!</p>
+            <p class="heroDescription"> I can help you with <span class="techColor"> {{this.tech}} </span> <span v-if="showTyping"> | </span> </p>
           </div>
           <div class="col-md-5">
-            <img src="~/static/honeythakuria.png" class="heroImage" />
+            <img src="~/static/Shubhi_main_pic.jpg" class="heroImage" width="450px"/>
           </div>
         </div>
       </div>
@@ -25,17 +25,21 @@
               class="stuffParent"
               v-for="individualStuff in $store.state.stuff"
               :key="individualStuff.id"
-              v-if="individualStuff.id < 3"
+              v-if="individualStuff.id < 6"
             >
               <a :href="individualStuff.url" target="_blank">
                 <div class="stuffImage">
                   <img :src="individualStuff.imageUrl" class="stuffImageActual" />
                 </div>
                 <div class="stuffText">
-                  <p class="stuffTextTitle">{{individualStuff.title}}</p>
+                  <p class="stuffTextTitle">Title: <span class= "xyz"> {{individualStuff.title}} </span> </p>
                   <p class="stuffDesc">
-                    <span class="publicationText">Publication:</span>
+                    <span class="publicationText">Client:</span>
                     {{individualStuff.publication}}
+                  </p>
+                  <p class="stuffDesc">
+                    <span class="publicationText">Year:</span>
+                    {{individualStuff.Year}}
                   </p>
                 </div>
               </a>
@@ -46,17 +50,21 @@
               class="stuffParent-right"
               v-for="individualStuff in $store.state.stuff"
               :key="individualStuff.id"
-              v-if="individualStuff.id >= 3"
+              v-if="individualStuff.id >= 6"
             >
               <a :href="individualStuff.url" target="_blank">
                 <div class="stuffImage">
                   <img :src="individualStuff.imageUrl" class="stuffImageActual" />
                 </div>
                 <div class="stuffText">
-                  <p class="stuffTextTitle">{{individualStuff.title}}</p>
+                  <p class="stuffTextTitle"> Title: <span class= "xyz">  {{individualStuff.title}} </span> </p>
                   <p class="stuffDesc">
-                    <span class="publicationText">Publication:</span>
+                    <span class="publicationText" >Client:</span>
                     {{individualStuff.publication}}
+                  </p>
+                  <p class="stuffDesc">
+                    <span class="publicationText">Year:</span>
+                    {{individualStuff.Year}}
                   </p>
                 </div>
               </a>
@@ -161,14 +169,19 @@ export default {
       showTyping:true,
       tech: "",
       arrayTech: [
-        "Vue",
-        "React",
-        "Angular",
-        "Node.JS",
+        "Instruction Design",
+        "Case Studies",
+        "E-Learning",
+        "Research",
+        "Content Development",
+        "Data Analysis",
+        "Project Management",
+        "Consulting",
+        "Camptasia",
+        "Articulate Storyline",
         "Python",
-        "AWS",
-        "MongoDB",
-        "Javascript"
+        "Excel",
+        "Tableau",
       ]
     };
   },
@@ -238,6 +251,10 @@ export default {
   height: 305px;
 }
 
+.xyz
+{color: #3AA8FF;
+}
+
 .stuffParent-right {
   width: 100%;
   max-width: 488px;
@@ -305,7 +322,7 @@ export default {
 }
 
 .publicationText {
-  color: #4e4e50;
+  color: black;
 }
 
 .companyTitle {
