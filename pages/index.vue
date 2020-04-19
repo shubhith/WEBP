@@ -29,17 +29,17 @@
             >
               <a :href="individualStuff.url" target="_blank">
                 <div class="stuffImage">
-                  <img :src="individualStuff.imageUrl" class="stuffImageActual" />
+                  <img :src="individualStuff.imageUrl" :class="{'stuffImageActual':true,'image-hun': individualStuff.id == 3}" />
                 </div>
                 <div class="stuffText">
-                  <p class="stuffTextTitle">Title: <span class= "xyz"> {{individualStuff.title}} </span> </p>
-                  <p class="stuffDesc">
-                    <span class="publicationText">Client:</span>
-                    {{individualStuff.publication}}
+                  <p class=""> <span class="stuffTextTitle">  Title: </span>  <span class= "xyz"> {{individualStuff.title}} </span> </p>
+                  <p>
+                    <span class="publicationText"><span class="stuffTextTitle"> Client: </span>  </span>
+                     <span class="stuffDesc"> {{individualStuff.publication}} </span>
                   </p>
-                  <p class="stuffDesc">
-                    <span class="publicationText">Year:</span>
-                    {{individualStuff.Year}}
+                  <p>
+                    <span class="publicationText"><span class="stuffTextTitle"> Year: </span></span>
+                      <span class="stuffDesc"> {{individualStuff.Year}} </span>
                   </p>
                 </div>
               </a>
@@ -54,17 +54,17 @@
             >
               <a :href="individualStuff.url" target="_blank">
                 <div class="stuffImage">
-                  <img :src="individualStuff.imageUrl" class="stuffImageActual" />
+                  <img :src="individualStuff.imageUrl" :class="{'stuffImageActual':true,'image-hun': individualStuff.id == 6}" />
                 </div>
                 <div class="stuffText">
                   <p class="stuffTextTitle"> Title: <span class= "xyz">  {{individualStuff.title}} </span> </p>
-                  <p class="stuffDesc">
-                    <span class="publicationText" >Client:</span>
-                    {{individualStuff.publication}}
+                   <p>
+                    <span class="publicationText"><span class="stuffTextTitle"> Client: </span>  </span>
+                     <span class="stuffDesc"> {{individualStuff.publication}} </span>
                   </p>
-                  <p class="stuffDesc">
-                    <span class="publicationText">Year:</span>
-                    {{individualStuff.Year}}
+                  <p>
+                    <span class="publicationText"><span class="stuffTextTitle"> Year: </span></span>
+                      <span class="stuffDesc"> {{individualStuff.Year}} </span>
                   </p>
                 </div>
               </a>
@@ -84,7 +84,7 @@
               v-if="individualCompany.id < 3"
             >
               <div class="stuffImage">
-                <img :src="individualCompany.url" class="stuffImageActual" />
+                <img :src="individualCompany.url" class="stuffImageActual image-hun" />
               </div>
               <div class="stuffText">
                 <p class="companyTitle">{{individualCompany.name}}</p>
@@ -100,7 +100,7 @@
               v-if="individualCompany.id >= 3"
             >
               <div class="stuffImage">
-                <img :src="individualCompany.url" class="stuffImageActual" />
+                <img :src="individualCompany.url" class="stuffImageActual image-hun" />
               </div>
               <div class="stuffText">
                 <p class="companyTitle">{{individualCompany.name}}</p>
@@ -239,7 +239,7 @@ export default {
 .stuffParent {
   width: 100%;
   max-width: 488px;
-
+  
   position: relative;
   margin-bottom: 50px;
 }
@@ -253,6 +253,10 @@ export default {
 
 .xyz
 {color: #3AA8FF;
+font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .stuffParent-right {
@@ -270,9 +274,18 @@ export default {
   height: 229px;
   overflow: hidden;
   border-radius: 5px;
+
 }
 .stuffImageActual {
   width: 100%;
+}
+.image-hover{
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.24);
+}
+.image-hun{
+  width:100%;
+  height:100%;
+  padding:10px;
 }
 .stuffTitle {
   margin-bottom: 140px;
@@ -314,7 +327,7 @@ export default {
 .stuffDesc {
   font-family: Karla;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
 

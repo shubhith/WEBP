@@ -62,7 +62,7 @@ export const state = () => {
       publication: "Room To Read",
       Year: "2020",
       imageUrl:
-        "Salesforce.png"
+        "sales.png"
     },
 
 
@@ -125,7 +125,7 @@ export const state = () => {
     }
   ],
   companies:[{id:1,name:"Room To Read",url:"R2R.png",duration:"Jan 2020 - Apil 2020"},
-  {id:2,name:"Coursera",url:"CL.jpg", duration:"Nov 2019 - May 2020"},
+  {id:2,name:"Coursera",url:"cour.png", duration:"Nov 2019 - May 2020"},
   {id:3,name:"UC Berkeley",url:"UCBL.jpg", duration:"Jan 2018 - May 2019"},
   {id:4,name:"United Nations",url:"UN2.jpg",duration:"May 2018 - July 2018"}]
 
